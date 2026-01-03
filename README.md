@@ -2,7 +2,7 @@
 
 Jioreboot reverse-engineers Jio Fiber's dashboard (or Centram Home Gateway) API
 and reboots the router on command. This is useful for scheduling restarts or
-just casual ones if you also despise like leaving your room :P
+just casual ones if you also despise leaving your room :P
 
 It's done by sending a POST request to the router's login page and getting the cookie from the response headers, ultimately utilizing regex to scrape a CSRF token from the HTML response to make the API call that does the reboot. See the source code for more underlying details.
 
