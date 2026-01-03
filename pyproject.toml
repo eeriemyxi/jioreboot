@@ -1,0 +1,20 @@
+[project]
+name = "jioreboot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "eeriemyxi", email = "myxi@envs.net" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "platformdirs>=4.5.1",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+jioreboot = "jioreboot.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
